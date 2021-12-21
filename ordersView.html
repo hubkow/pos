@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./assets/styles/css.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="bg-dark" style="width: 1920; height: 1080px; padding-right: 10px; padding-left: 10px; padding-top: 10px; caret-color: transparent; user-select: none;">
+     <!--   <div class="row bg-light mx-0 rounded" style="margin-bottom: 10px;"> 
+            <div class="col-sm-8" style="padding-right: 20px; padding-left: 20px; height: 90px; padding-top: 8px; padding-left: 1800px;">
+                <img src="./assets/images/home.png" width="70px">
+            </div>
+        </div>  -->
+        <div class="row bg-light mx-0 rounded">
+            <div class="col-sm-8" style="padding-right: 20px; padding-left: 20px; height: 1060px;">
+                <div class="card mb-3 shadow" style="margin-top: 15px;">
+                    <div class="card-body mb-2 mt-2">
+                        <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active border border-primary" style="min-height: 60px; margin-right: 15px; margin-bottom: 15px;" id="pills-bajgle-tab" data-bs-toggle="pill" data-bs-target="#pills-bajgle" type="button" role="tab" aria-controls="pills-bajgle" aria-selected="true"><img draggable="false" src="./assets/images/bagel.png" style="width: 35px; margin-right: 7px; margin-bottom: 2 px; margin-left: -5px;">BAJGLE</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link border border-primary" style="min-height: 60px; margin-right: 15px;" id="pills-bulki-tab" data-bs-toggle="pill" data-bs-target="#pills-bulki" type="button" role="tab" aria-controls="pills-bulki" aria-selected="false"><img draggable="false" src="./assets/images/roll.png" style="width: 35px; margin-right: 7px; margin-bottom: 2 px; margin-left: -5px;">BUŁKI</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link border border-primary" style="min-height: 60px; margin-right: 15px;" id="pills-croissanty-tab" data-bs-toggle="pill" data-bs-target="#pills-croissanty" type="button" role="tab" aria-controls="pills-croissanty" aria-selected="false"><img draggable="false" src="./assets/images/croissant.png" style="width: 40px; margin-right: 7px; margin-bottom: 2 px; margin-left: -5px;">CROISSANTY</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link border border-primary" style="min-height: 60px; margin-right: 15px;" id="pills-bestsellery-tab" data-bs-toggle="pill" data-bs-target="#pills-bestsellery" type="button" role="tab" aria-controls="pills-bestsellery" aria-selected="false"><img draggable="false" src="./assets/images/bestseller.png" style="width: 35px; margin-right: 7px; margin-bottom: 2 px; margin-left: -5px;">BESTSELLERY</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link border border-primary" style="min-height: 60px; margin-right: 15px;" id="pills-zupy-tab" data-bs-toggle="pill" data-bs-target="#pills-zupy" type="button" role="tab" aria-controls="pills-zupy" aria-selected="false"><img draggable="false" src="./assets/images/soup.png" style="width: 35px; margin-right: 7px; margin-bottom: 2 px; margin-left: -5px;">ZUPY</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link border border-primary" style="min-height: 60px; margin-right: 15px;" id="pills-wrapy-tab" data-bs-toggle="pill" data-bs-target="#pills-wrapy" type="button" role="tab" aria-controls="pills-wrapy" aria-selected="false"><img draggable="false" src="./assets/images/tortilla.png" style="width: 35px; margin-right: 7px; margin-bottom: 2 px; margin-left: -5px;">WRAPY</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link border border-primary" style="min-height: 60px; margin-right: 15px;" id="pills-slodkie-tab" data-bs-toggle="pill" data-bs-target="#pills-slodkie" type="button" role="tab" aria-controls="pills-slodkie" aria-selected="false"><img draggable="false" src="./assets/images/candy.png" style="width: 35px; margin-right: 7px; margin-bottom: 2 px; margin-left: -5px;">SŁODKIE</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link border border-primary" style="min-height: 60px; margin-right: 15px;" id="pills-salatki-tab" data-bs-toggle="pill" data-bs-target="#pills-salatki" type="button" role="tab" aria-controls="pills-salatki" aria-selected="false"><img draggable="false" src="./assets/images/salad.png" style="width: 35px; margin-right: 7px; margin-bottom: 2 px; margin-left: -5px;">SAŁATKI</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link border border-primary" style="min-height: 60px; margin-right: 15px;" id="pills-napoje-cieple-tab" data-bs-toggle="pill" data-bs-target="#pills-napoje-cieple" type="button" role="tab" aria-controls="pills-napoje-cieple" aria-selected="false"><img draggable="false" src="./assets/images/hotdrinks.png" style="width: 35px; margin-right: 7px; margin-bottom: 2 px; margin-left: -5px;">KAWY</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link border border-primary" style="min-height: 60px; margin-right: 15px;" id="pills-napoje-zimne-tab" data-bs-toggle="pill" data-bs-target="#pills-napoje-zimne" type="button" role="tab" aria-controls="pills-napoje-zimne" aria-selected="false"><img draggable="false" src="./assets/images/coctail.png" style="width: 35px; margin-right: 7px; margin-bottom: 2 px; margin-left: -5px;">KOKTAJLE</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link border border-primary" style="min-height: 60px; margin-right: 15px;" id="pills-napoje-zimne-tab" data-bs-toggle="pill" data-bs-target="#pills-napoje-zimne" type="button" role="tab" aria-controls="pills-napoje-zimne" aria-selected="false"><img draggable="false" src="./assets/images/colddrinks.png" style="width: 35px; margin-right: 7px; margin-bottom: 2 px; margin-left: -5px;">COLD PRESS</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link border border-primary" style="min-height: 60px; margin-right: 15px;" id="pills-dodatki-tab" data-bs-toggle="pill" data-bs-target="#pills-dodatki" type="button" role="tab" aria-controls="pills-dodatki" aria-selected="false"><img draggable="false" src="./assets/images/extra.png" style="width: 35px; margin-right: 7px; margin-bottom: 2 px; margin-left: -5px;">DODATKI</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link border border-primary" style="min-height: 60px; margin-right: 15px;" id="pills-boxy-tab" data-bs-toggle="pill" data-bs-target="#pills-boxy" type="button" role="tab" aria-controls="pills-boxy" aria-selected="false"><img draggable="false" src="./assets/images/box.png" style="width: 35px; margin-right: 7px; margin-bottom: 2 px; margin-left: -5px;">BOXY</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link border border-primary" style="min-height: 60px; margin-right: 15px;" id="pills-checkout-tab" data-bs-toggle="pill" data-bs-target="#pills-checkout" type="button" role="tab" aria-controls="pills-checkout" aria-selected="false">CHECKOUT</button>
+                              </li>
+                        </ul>
+                    </div>
+                </div>
+                  <div class="tab-content" id="pills-tabContent" style="height: 700px;">
+                    <div class="tab-pane fade show active" id="pills-bajgle" role="tabpanel" aria-labelledby="pills-bajgle-tab">
+                        <div class="row row-cols-6 g-4">
+                            <div class="col">
+                              <div class="card shadow btn-info" onclick="orderBasket(1 ,'EGGSTRA', 14.01, 8);" style="cursor: pointer; ">
+                                <img draggable="false" src="./assets/images/bagel.png" style="width: 4rem; margin-top: 10px; margin-left: 10px;" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <div class="card-title" style="min-height:60px; font-size: 15px;">EGGSTRA</div>
+                                  <p class="card-text text-muted">14.00 PLN</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card shadow btn-info" onclick="orderBasket(2, 'ZBOCZEK', 1, 8);" style="cursor: pointer;">
+                                <img draggable="false" src="./assets/images/bagel.png" style="width: 4rem; margin-top: 10px; margin-left: 10px;" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <div class="card-title" style="min-height:60px; font-size: 15px;">ZBOCZEK</div>
+                                  <p class="card-text text-muted">15.00 PLN</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card shadow btn-info" onclick="orderBasket(3, 'WŁOSKA ROBOTA', 17.00, 8);" style="cursor: pointer;">
+                                <img draggable="false" src="./assets/images/bagel.png" style="width: 4rem; margin-top: 10px; margin-left: 10px;" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="card-title" style="min-height:60px; font-size: 15px;">WŁOSKA ROBOTA</div>
+                                  <p class="card-text text-muted">17 PLN</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card shadow btn-info" onclick="orderBasket(4, 'CIECIORA', 17.00, 8);" style="cursor: pointer;">
+                                <img draggable="false" src="./assets/images/bagel.png" style="width: 4rem; margin-top: 10px; margin-left: 10px;" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <div class="card-title" style="min-height:60px; font-size: 15px;">CIECIORA</div>
+                                  <p class="card-text text-muted">17 PLN</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow btn-info" onclick="orderBasket(5, 'SAY CHEESE', 18.00, 8);" style="cursor: pointer;">
+                                    <img draggable="false" src="./assets/images/bagel.png" style="width: 4rem; margin-top: 10px; margin-left: 10px;" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <div class="card-title" style="min-height:60px; font-size: 15px;">SAY CHEESE</div>
+                                    <p class="card-text text-muted">18 PLN</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="card shadow btn-info" onclick="orderBasket(6, 'AVO-CARDIO', 18, 8);" style="cursor: pointer;">
+                                    <img draggable="false" src="./assets/images/bagel.png" style="width: 4rem; margin-top: 10px; margin-left: 10px;" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <div class="card-title" style="min-height:60px; font-size: 15px;">AVO-CARDIO</div>
+                                    <p class="card-text text-muted">18 PLN</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="card shadow btn-info" onclick="orderBasket(7, 'ZŁOTA RYBKA', 1, 8);" style="cursor: pointer;">
+                                    <img draggable="false" src="./assets/images/bagel.png" style="width: 4rem; margin-top: 10px; margin-left: 10px;" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <div class="card-title" style="min-height:60px; font-size: 15px;">ZŁOTA RYBKA</div>
+                                    <p class="card-text text-muted">19 PLN</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="card shadow btn-info" onclick="orderBasket(8, 'CEZAR', 19, 8);" style="cursor: pointer;">
+                                    <img draggable="false" src="./assets/images/bagel.png" style="width: 4rem; margin-top: 10px; margin-left: 10px;" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <div class="card-title" style="min-height:60px; font-size: 15px;">CEZAR</div>
+                                    <p class="card-text text-muted">19 PLN</p>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-bulki" role="tabpanel" aria-labelledby="pills-bulki-tab">
+                        <div class="row row-cols-6 g-4 d-flex align-items-start">
+                            <div class="col">
+                              <div class="card shadow btn-info" onclick="orderBasket(9, 'FETA', 10, 23);" style="cursor: pointer;">
+                                <img draggable="false" src="./assets/images/roll.png" style="width: 4rem; margin-top: 10px; margin-left: 10px;" class="card-img-top" alt="...">
+                                <div class="card-body size">
+                                  <div class="card-title" style="min-height:60px; font-size: 15px;">FETA</div>
+                                  <p class="card-text text-muted">10 PLN</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card shadow btn-info" onclick="orderBasket(10, 'BAJO JAJO', 10, 23);" style="cursor: pointer;">
+                                <img draggable="false" src="./assets/images/roll.png" style="width: 4rem; margin-top: 10px; margin-left: 10px;" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <div class="card-title" style="min-height:60px; font-size: 15px;">BAJO JAJO</div>
+                                  <p class="card-text text-muted">10 PLN</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card shadow btn-info" onclick="orderBasket(11, 'FROMAŻ', 10, 23);" style="cursor: pointer;">
+                                <img draggable="false" src="./assets/images/roll.png" style="width: 4rem; margin-top: 10px; margin-left: 10px;" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="card-title" style="min-height:60px; font-size: 15px;">FROMAŻ</div>
+                                  <p class="card-text text-muted">10 PLN</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card shadow btn-info" onclick="orderBasket(12, 'KLASYK', 10, 23);" style="cursor: pointer;">
+                                <img draggable="false" src="./assets/images/roll.png" style="width: 4rem; margin-top: 10px; margin-left: 10px;" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <div class="card-title" style="min-height:60px; font-size: 15px;">KLASYK</div>
+                                  <p class="card-text text-muted">10 PLN</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow btn-info" onclick="orderBasket(13, 'PASZTET', 11, 23);" style="cursor: pointer;">
+                                    <img draggable="false" src="./assets/images/roll.png" style="width: 4rem; margin-top: 10px; margin-left: 10px;" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <div class="card-title" style="min-height:60px; font-size: 15px;">PASZTET</div>
+                                    <p class="card-text text-muted">11 PLN</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="card shadow btn-info" onclick="orderBasket(14, 'SALOMON', 13, 23);" style="cursor: pointer;">
+                                    <img draggable="false" src="./assets/images/roll.png" style="width: 4rem; margin-top: 10px; margin-left: 10px;" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <div class="card-title" style="min-height:60px; font-size: 15px;">SALOMON</div>
+                                    <p class="card-text text-muted">13 PLN</p>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-croissanty" role="tabpanel" aria-labelledby="pills-croissanty-tab">
+                        <div class="row row-cols-6 g-4">
+                            <div class="col">
+                              <div class="card shadow btn-info" onclick="orderBasket(15, 'CAPRESE', 14, 8);" style="cursor: pointer;">
+                                <img draggable="false" src="./assets/images/croissant.png" style="width: 4rem; margin-top: 10px; margin-left: 10px;" class="card-img-top" alt="...">
+                                <div class="card-body size">
+                                  <div class="card-title" style="min-height:60px; font-size: 15px;">CAPRESE</div>
+                                  <p class="card-text text-muted">14 PLN</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card shadow btn-info" onclick="orderBasket(16, 'PLEŚNIAK', 15, 8);" style="cursor: pointer;">
+                                <img draggable="false" src="./assets/images/croissant.png" style="width: 4rem; margin-top: 10px; margin-left: 10px;" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <div class="card-title" style="min-height:60px; font-size: 15px;">PLEŚNIAK</div>
+                                  <p class="card-text text-muted">15 PLN</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card shadow btn-info" onclick="orderBasket(17, 'AVOCADO', 19, 8);" style="cursor: pointer;">
+                                <img draggable="false" src="./assets/images/croissant.png" style="width: 4rem; margin-top: 10px; margin-left: 10px;" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="card-title" style="min-height:60px; font-size: 15px;">AVOCADO</div>
+                                  <p class="card-text text-muted">19 PLN</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card shadow btn-info" onclick="orderBasket(18, 'KOZIOŁEK MATOŁEK', 20, 8);" style="cursor: pointer;">
+                                <img draggable="false" src="./assets/images/croissant.png" style="width: 4rem; margin-top: 10px; margin-left: 10px;" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <div class="card-title" style="min-height:60px; font-size: 15px;">KOZIOŁEK MATOŁEK</div>
+                                  <p class="card-text text-muted">20 PLN</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow btn-info" onclick="orderBasket(19, 'NEMO', 20, 8);" style="cursor: pointer;">
+                                <img draggable="false" src="./assets/images/croissant.png" style="width: 4rem; margin-top: 10px; margin-left: 10px;" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <div class="card-title" style="min-height:60px; font-size: 15px;">NEMO</div>
+                                    <p class="card-text text-muted">20 PLN</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="card shadow btn-info" onclick="orderBasket(20, 'PRZE-SADZONY', 18, 8);" style="cursor: pointer;">
+                                <img draggable="false" src="./assets/images/croissant.png" style="width: 4rem; margin-top: 10px; margin-left: 10px;" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <div class="card-title" style="min-height:60px; font-size: 15px;">PRZE-SADZONY</div>
+                                    <p class="card-text text-muted">18 PLN</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="card shadow btn-info" onclick="orderBasket(21, 'CIAO ITALIA', 18, 8);" style="cursor: pointer;">
+                                    <img draggable="false" src="./assets/images/croissant.png" style="width: 4rem; margin-top: 10px; margin-left: 10px;" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <div class="card-title" style="min-height:60px; font-size: 15px;">CIAO ITALIA</div>
+                                    <p class="card-text text-muted">18 PLN</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="card shadow btn-info" onclick="orderBasket(22, 'BURGER ŚNIADANIOWY', 20.99, 8);" style="cursor: pointer;">
+                                <img draggable="false" src="./assets/images/croissant.png" style="width: 4rem; margin-top: 10px; margin-left: 10px;" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <div class="card-title" style="min-height:60px; font-size: 15px;">BURGER ŚNIADANIOWY</div>
+                                    <p class="card-text text-muted">20 PLN</p>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-bestsellery" role="tabpanel" aria-labelledby="pills-bestsellery-tab">Bestsellery</div>
+                    <div class="tab-pane fade" id="pills-zupy" role="tabpanel" aria-labelledby="pills-zupy-tab">Zupy</div>
+                    <div class="tab-pane fade" id="pills-wrapy" role="tabpanel" aria-labelledby="pills-wrapy-tab">Wrapy</div>
+                    <div class="tab-pane fade" id="pills-slodkie" role="tabpanel" aria-labelledby="pills-slodkie-tab">Słodkie</div>
+                    <div class="tab-pane fade" id="pills-salatki" role="tabpanel" aria-labelledby="pills-salatki-tab">Sałatki</div>
+                    <div class="tab-pane fade" id="pills-boxy" role="tabpanel" aria-labelledby="pills-boxy-tab">Boxy</div>
+                    <div class="tab-pane fade" id="pills-napoje-cieple" role="tabpanel" aria-labelledby="pills-napoje-cieple-tab">Napoje ciepłe</div>
+                    <div class="tab-pane fade" id="pills-napoje-zimne" role="tabpanel" aria-labelledby="pills-napoje-zimne-tab">Napoje zimne</div>
+                    <div class="tab-pane fade" id="pills-dodatki" role="tabpanel" aria-labelledby="pills-dodatki-tab">Dodatki</div>
+                    <div class="tab-pane fade" id="pills-checkout" role="tabpanel" aria-labelledby="pills-checkout-tab">CHECKOUT</div>
+                  </div>
+                  <div class="card mb-3 shadow" style="margin-top: 15px;">
+                    <div class="card-body mb-2 mt-2">
+                        siema
+                    </div>
+                  </div>
+                  
+            </div>
+            <div class="col-sm-4">
+                <div class="card shadow" style="min-height: 1030px; max-height: 1030px; margin-top: 15px; padding-left: 20px; padding-right: 10px; padding-top: 0px;">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
+                          <h5 style="margin-top: 10px;">16.12.2021  09:46<br>Zamówienie #88</h5>
+                          <button type="button" class="btn-warning btn-lg border border-warning rounded shadow"  data-bs-toggle="modal" data-bs-target="#modalConfirmCzyszczenie" style="width: 120px; height: 60px;" >Wyczyść</button></div>
+
+                              <!-- Start modal -->
+                            <div class="modal fade" id="modalConfirmCzyszczenie" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content" style="font-size: 20px;">
+                                    <div class="modal-header">
+                                    <h4 class="modal-title" id="modalConfirmWyjscieLabel">Potwierdź</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                    Czy na pewno chcesz wyczyścić koszyk?
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" style="width: 100px; height: 60px;" onclick="orderBasketClear()" data-bs-dismiss="modal"><h5>Tak</h5></button>
+                                    <button type="button" class="btn btn-secondary" style="width: 100px; height: 60px;" data-bs-dismiss="modal"><h5>Nie</h5></button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <!--End modal-->
+
+                        <table class="table caption-top">
+                          <thead>
+                            <tr>
+                              <th scope="col" style="width: 290px;">Produkt</th>
+                              <th scope="col">Ilość</th>
+                              <th scope="col" style="padding-left:54px; padding-right: 40px;">Cena</th>
+                            </tr>
+                          </thead>
+                          </table>
+                        <div id="table-scroll" style="height:720px; overflow-y: scroll; scrollbar-width: thin; padding-right: 5px;">
+                          <table class="table caption-top">
+                            <tbody id="orderList" class="align-middle" style="font-size: large;">
+                            <!--Basket items add via script-->
+                            </tbody>
+                          </table>
+                        </div>
+                          <hr>
+                          <ul class="list-unstyled">
+                            <li class="d-flex justify-content-between align-items-center">
+                              <h5>Ilość produktów: </h5><div id="totalItems" class="card-text h5 fw-bold">0</div>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                              <h5>Podatek: </h5><div class="card-text h5 fw-bold"><span id="totalVatCost">0.00</span> zł</div>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                              <h5>Kwota brutto: </h5><div class="card-text h5 fw-bold"><span id="totalCost">0.00</span> zł</div>
+                            </li>
+                          </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+      const orderArray = [];
+      const orderItemsArray = [];
+      const orderPriceArray = [];
+      const orderVatArray = [];
+      const orderIdArray = [];
+      let i = 0;
+
+      function buildNavbar(){
+          //function to build navbar menu
+      }
+
+      function buildProducts(){
+          //function to build products menu
+      }
+
+      function orderBasket(itemId, itemName, itemPrice, itemVat){
+            
+
+        orderIdArray.push(i);
+        const orderList = document.getElementById('orderList');
+        const itemQuantity = 1;
+        
+        //Create the table structure
+        const orderItem = document.createElement('tr');
+        orderItem.setAttribute('id', 'basketPositionNumber'+i);
+
+        const orderItemNameTd = document.createElement('td');
+        orderItemNameTd.setAttribute('style', 'width: 230px;');
+        orderItemNameTd.innerHTML = '<div class="cut-text-basket-item-name">'+itemName+'</div>';
+
+        const orderItemQuantityMinusTd = document.createElement('td');
+        orderItemQuantityMinusTd.setAttribute('class', 'd-flex justify-content-center');
+        orderItemQuantityMinusTd.innerHTML = '<button type="button" class="btn-warning btn border border-warning rounded shadow" style="width:50px; height: 50px;">-</button>';
+
+        const orderItemQuantityTd = document.createElement('td');
+        orderItemQuantityTd.innerHTML = '<div class="d-flex justify-content-center" style="width:20px">'+itemQuantity+'</div>';
+
+        const orderItemQuantityPlusTd = document.createElement('td');
+        orderItemQuantityPlusTd.setAttribute('class', 'd-flex justify-content-center');
+        orderItemQuantityPlusTd.innerHTML = '<button type="button" class="btn-success btn border border-success rounded shadow" style="width:50px; height: 50px;">+</button>';
+
+        const orderItemPriceTd = document.createElement('td');
+        orderItemPriceTd.innerHTML = '<div class="d-flex justify-content-center" style="width:49px">'+itemPrice+'</div>';
+        
+        const orderItemDeleteTd = document.createElement('td');
+        orderItemDeleteTd.setAttribute('style', 'padding-right:10px;');
+        orderItemDeleteTd.innerHTML = '<button onclick="deleteItem('+i+', this)" type="button" class="btn-danger btn border border-danger rounded shadow" style="width:50px; height: 50px;">X</button>';
+
+
+        orderItem.appendChild(orderItemNameTd);
+        orderItem.appendChild(orderItemQuantityMinusTd);
+        orderItem.appendChild(orderItemQuantityTd);
+        orderItem.appendChild(orderItemQuantityPlusTd);
+        orderItem.appendChild(orderItemPriceTd);
+        orderItem.appendChild(orderItemDeleteTd);
+
+        orderList.appendChild(orderItem);
+
+        const vatValue = (itemVat/100)*itemPrice;
+        orderItemsArray.push(itemName);
+        orderPriceArray.push(parseFloat(itemPrice.toFixed(2)));
+        orderVatArray.push(parseFloat(vatValue.toFixed(2)));
+        //orderArray.push(i, itemName, parseFloat(itemPrice.toFixed(2)), parseFloat(vatValue.toFixed(2)));
+        
+        let chatHistory = document.getElementById("table-scroll");
+        chatHistory.scrollTop = chatHistory.scrollHeight;
+
+        i++;
+        totalItems();
+        totalVatCost();
+        totalCost();
+
+        };
+
+        function totalItems(){
+          document.getElementById('totalItems').innerText = orderItemsArray.length;
+        }
+
+        function totalVatCost(){
+          if (orderVatArray == 0) {
+            document.getElementById('totalVatCost').innerText = '0.00';
+          } else {
+            document.getElementById('totalVatCost').innerText = orderVatArray.reduce((total, num) => total + num, 0).toFixed(2);
+          }
+        }
+
+        function totalCost(){
+          if (orderPriceArray == 0) {
+            document.getElementById('totalCost').innerText = '0.00';
+          } else {
+            document.getElementById('totalCost').innerText = orderPriceArray.reduce((total, num) => total + num, 0).toFixed(2);
+          }
+        }
+
+        function orderBasketClear(){
+          let orderList = document.getElementById('orderList');
+          orderList.innerHTML = '';
+          orderPriceArray.length = 0;
+          orderVatArray.length = 0;
+          orderItemsArray.length = 0;
+          orderIdArray.length = 0;
+          orderArray.length = 0;
+          i = 0;
+          totalItems();
+          totalCost();
+          totalVatCost();
+        }
+
+        function deleteItem(itemId, button){
+          const indexNum = orderIdArray.indexOf(itemId);
+          orderIdArray.splice(indexNum, 1);
+          orderVatArray.splice(indexNum, 1);
+          orderItemsArray.splice(indexNum, 1);
+          orderPriceArray.splice(indexNum, 1);
+          totalItems();
+          totalVatCost();
+          totalCost();
+          console.log(orderItemsArray);
+
+          const removeItemGetById = document.getElementById('basketPositionNumber'+itemId);
+          removeItemGetById.parentNode.removeChild(removeItemGetById);
+        }
+
+    </script>
+
+   <!-- Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+  </body>
+</html>
